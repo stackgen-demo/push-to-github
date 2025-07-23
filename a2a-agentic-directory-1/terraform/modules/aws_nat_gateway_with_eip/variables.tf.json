@@ -1,0 +1,40 @@
+{
+  "variable": {
+    "subnet_id": [
+      {
+        "description": "Subnet ID where the NAT Gateway will be created",
+        "type": "string",
+        "nullable": false
+      }
+    ],
+    "nat_gateway_name": [
+      {
+        "description": "Name of the NAT Gateway",
+        "type": "string"
+      }
+    ],
+    "create_eip": [
+      {
+        "description": "Whether to create a new EIP for the NAT Gateway",
+        "type": "bool",
+        "default": true
+      }
+    ],
+    "eip_allocation_id": [
+      {
+        "description": "Existing EIP allocation ID to use for the NAT Gateway. Required if create_eip is false",
+        "type": "string",
+        "default": "",
+        "nullable": true
+      }
+    ],
+    "tags": [
+      {
+        "description": "Tags to be applied to the NAT Gateway",
+        "type": "map(string)",
+        "default": {},
+        "nullable": true
+      }
+    ]
+  }
+}

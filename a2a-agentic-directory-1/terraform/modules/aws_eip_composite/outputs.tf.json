@@ -1,0 +1,19 @@
+{
+  "output": {
+    "allocation_id": {
+      "description": "The allocation ID of the EIP",
+      "sensitive": false,
+      "value": "${aws_eip.main.allocation_id}"
+    },
+    "id": {
+      "description": "The ID of the EIP",
+      "sensitive": false,
+      "value": "${aws_eip.main.id}"
+    },
+    "public_ip": {
+      "description": "The public IP address of the EIP",
+      "sensitive": false,
+      "value": "${aws_eip.main.public_ip}"
+    }
+  }
+}

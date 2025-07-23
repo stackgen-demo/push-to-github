@@ -1,0 +1,18 @@
+{
+    "variable": {
+        "name": [
+            {
+                "description": "Name to be used for the EIP",
+                "type": "string"
+            }
+        ],
+        "tags": [
+            {
+                "default": {},
+                "description": "Tags to apply to the EIP",
+                "type": "map(string)",
+                "nullable": true
+            }
+        ]
+    }
+}

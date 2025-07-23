@@ -1,0 +1,40 @@
+{
+    "variable": {
+        "name": [
+            {
+                "description": "Name prefix for the route table",
+                "type": "string",
+                "nullable": false
+            }
+        ],
+        "routes": [
+            {
+                "default": [],
+                "description": "List of route configurations for the route table",
+                "type": "list(object({ cidr_block: string, target_type: string, target_id: string }))"
+            }
+        ],
+        "subnet_ids": [
+            {
+                "description": "List of subnet IDs to associate with the route table",
+                "type": "list(string)",
+                "nullable": false
+            }
+        ],
+        "tags": [
+            {
+                "default": {},
+                "description": "Tags to apply to all resources",
+                "type": "map(string)",
+                "nullable": true
+            }
+        ],
+        "vpc_id": [
+            {
+                "description": "VPC ID where the route table will be created",
+                "type": "string",
+                "nullable": false
+            }
+        ]
+    }
+}
