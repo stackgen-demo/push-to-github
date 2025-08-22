@@ -1,5 +1,5 @@
 {
-  "app_stack_name": "custom-modules-flow",
+  "app_stack_name": "s3-complete-appstack",
   "iac_type": "Terraform",
   "provider": "aws",
   "multi_env": false,
