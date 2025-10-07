@@ -1,9 +1,0 @@
-{
-  "output": {
-    "result": {
-      "description": "The generated random string.",
-      "sensitive": false,
-      "value": "${random_string.this.result}"
-    }
-  }
-}
