@@ -1,0 +1,161 @@
+{
+    "variable": {
+        "athena_engine_version": [
+            {
+                "default": "AUTO",
+                "description": "Requested Athena engine version.",
+                "nullable": false,
+                "type": "string"
+            }
+        ],
+        "bucket_name": [
+            {
+                "description": "Name of S3 bucket to save the results of the query execution.",
+                "nullable": false,
+                "type": "string"
+            }
+        ],
+        "bytes_scanned_cutoff_per_query": [
+            {
+                "default": 10485760,
+                "description": "The upper data usage limit (cutoff) for the amount of bytes a single query in a workgroup is allowed to scan.",
+                "nullable": false,
+                "type": "number"
+            }
+        ],
+        "database_force_destroy": [
+            {
+                "default": false,
+                "description": "Whether to destroy all tables in the database when destroying the database resource.",
+                "nullable": false,
+                "type": "bool"
+            }
+        ],
+        "database_name": [
+            {
+                "description": "Name of the database to create.",
+                "nullable": false,
+                "type": "string"
+            }
+        ],
+        "encrypt_query_results": [
+            {
+                "default": true,
+                "description": "Specifies whether query results must be encrypted, for all queries that run in this workgroup.",
+                "nullable": false,
+                "type": "bool"
+            }
+        ],
+        "encryption_option": [
+            {
+                "default": "SSE_KMS",
+                "description": "Type of key.",
+                "nullable": false,
+                "type": "string"
+            }
+        ],
+        "expected_bucket_owner": [
+            {
+                "description": "AWS account ID that you expect to be the owner of the Amazon S3 bucket.",
+                "nullable": true,
+                "type": "string"
+            }
+        ],
+        "kms_key": [
+            {
+                "description": "The ARN of the KMS key to be used to decrypt the data in S3.",
+                "nullable": true,
+                "type": "string"
+            }
+        ],
+        "query": [
+            {
+                "description": "The query string.",
+                "nullable": false,
+                "type": "string"
+            }
+        ],
+        "query_description": [
+            {
+                "description": "The description for the named query.",
+                "nullable": true,
+                "type": "string"
+            }
+        ],
+        "query_name": [
+            {
+                "description": "The name of the query.",
+                "type": "string"
+            }
+        ],
+        "query_results_encryption_option": [
+            {
+                "default": "SSE_KMS",
+                "description": "Type of encryption.",
+                "nullable": false,
+                "type": "string"
+            }
+        ],
+        "require_encryption_configuration": [
+            {
+                "default": false,
+                "description": "Encryption key block AWS Athena uses to decrypt the data in S3.",
+                "nullable": false,
+                "type": "bool"
+            }
+        ],
+        "result_output_location": [
+            {
+                "description": "The location in Amazon S3 where your query results are stored, such as s3://path/to/query/bucket/.",
+                "nullable": true,
+                "type": "string"
+            }
+        ],
+        "set_acl_configuration": [
+            {
+                "default": false,
+                "description": "Should an Amazon S3 canned ACL be set to control ownership of stored query results.",
+                "nullable": false,
+                "type": "bool"
+            }
+        ],
+        "workgroup_description": [
+            {
+                "description": "The description of the workgroup.",
+                "nullable": true,
+                "type": "string"
+            }
+        ],
+        "workgroup_force_destroy": [
+            {
+                "default": false,
+                "description": "Option to delete the workgroup and its contents even if the workgroup contains any named queries.",
+                "nullable": false,
+                "type": "bool"
+            }
+        ],
+        "workgroup_name": [
+            {
+                "description": "The name of the workgroup.",
+                "nullable": false,
+                "type": "string"
+            }
+        ],
+        "workgroup_state": [
+            {
+                "default": "ENABLED",
+                "description": "The state of the workgroup.",
+                "nullable": false,
+                "type": "string"
+            }
+        ],
+        "tags": [
+            {
+                "default": {},
+                "description": "A map of tags to apply to the resources",
+                "type": "map(string)",
+                "nullable":true
+            }
+        ]
+    }
+}

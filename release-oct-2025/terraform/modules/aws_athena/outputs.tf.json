@@ -1,0 +1,19 @@
+{
+  "output": {
+    "arn": {
+      "description": "The value of the wg_arn output",
+      "sensitive": false,
+      "value": "${aws_athena_workgroup.this.arn}"
+    },
+    "database_id": {
+      "description": "The value of the database_id output",
+      "sensitive": false,
+      "value": "${aws_athena_database.this.id}"
+    },
+    "query_id": {
+      "description": "The value of the query_id output",
+      "sensitive": false,
+      "value": "${aws_athena_named_query.this.id}"
+    }
+  }
+}
