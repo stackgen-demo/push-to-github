@@ -95,8 +95,6 @@ resource "aws_kms_alias" "a" {
   target_key_id = aws_kms_key.custom_s3_kms_key[0].key_id
 }
 
-data "aws_caller_identity" "current" {}
-
 
 
 
