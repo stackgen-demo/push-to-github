@@ -1,7 +1,7 @@
 {
-  "app_stack_name": "custom-modules-flow",
+  "app_stack_name": "deploy-s3-newtest",
   "iac_type": "Terraform",
   "provider": "aws",
-  "multi_env": false,
+  "multi_env": true,
   "exporter": "terraform"
 }
